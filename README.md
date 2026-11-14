@@ -2,7 +2,7 @@
 
 [![GitHub release](https://img.shields.io/github/v/release/Phrozenn1/tether-obsidian?style=flat-square&color=22d3ee)](https://github.com/Phrozenn1/tether-obsidian/releases)
 [![Obsidian >= 1.0.0](https://img.shields.io/badge/Obsidian-%3E%3D1.0.0-7c3aed?style=flat-square)](https://obsidian.md)
-[![License: MIT](https://img.shields.io/badge/License-MIT-teal.svg?style=flat-square)](LICENSE)
+[![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg?style=flat-square)](LICENSE)
 [![GitHub](https://img.shields.io/badge/GitHub-Phrozenn1%2Ftether--obsidian-181717?style=flat-square&logo=github)](https://github.com/Phrozenn1/tether-obsidian)
 
 > **Flowmodoro timer, automatic context save-states, RAM-dump working memory manager, and cognitive anchoring for deep work, neurodivergent minds, and focus.**  
@@ -75,4 +75,4 @@ Open **Tether Desktop → Settings → Arbeidsprogrammer og Kontekst-ankring**, 
 
 ## 📄 License
 
-[MIT](LICENSE) © [Phrozenn1](https://github.com/Phrozenn1)
+[GPL-2.0](LICENSE) © [Phrozenn1](https://github.com/Phrozenn1)
