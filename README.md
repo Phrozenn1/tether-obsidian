@@ -62,14 +62,14 @@ Open **Tether Desktop → Settings (`Innstillinger`) → Work Apps & Context Anc
 
 | Command | Meaning | Description |
 | :--- | :--- | :--- |
-| `Tether: Åpne Tether Hub` | Open Tether Hub | Open quick control modal (also via Ribbon anchor icon or status bar) |
-| `Tether: Start / Pause Flowmodoro` | Toggle Flowmodoro | Toggle between Focus and earned proportional Break |
-| `Tether: Start 5-min Mikrostart` | 5m Micro-Start | Begin a 5-minute low-barrier Micro-Start session |
-| `Tether: Nullstill Flowmodoro` | Reset Flowmodoro | Reset timer to Idle |
-| `Tether: Parker impuls / avsporing` | Park Impulse | Capture a distracting thought to `impulses.md` |
-| `Tether: Arbeidsminne / RAM-dumps (Opprett / Rediger / Slett)` | RAM-Dump Manager | Create, auto-fill, edit, or delete RAM-dumps |
-| `Tether: Avslutt dagen (Shutdown Ritual)` | Shutdown Ritual | Run evening shutdown and park tomorrow's first step |
-| `Tether: Åpne Tether Desktop` | Open Tether Desktop | Launch or focus Tether Desktop |
+| `Tether Flowmodoro: Open Tether hub` | Open Tether Hub | Open quick control modal (also via Ribbon anchor icon or status bar) |
+| `Tether Flowmodoro: Start or pause Flowmodoro` | Toggle Flowmodoro | Toggle between Focus and earned proportional Break |
+| `Tether Flowmodoro: Start 5-minute micro-start` | 5m Micro-Start | Begin a 5-minute low-barrier Micro-Start session |
+| `Tether Flowmodoro: Reset Flowmodoro` | Reset Flowmodoro | Reset timer to Idle |
+| `Tether Flowmodoro: Capture impulse` | Park Impulse | Capture a distracting thought to `impulses.md` |
+| `Tether Flowmodoro: Manage working memory` | RAM-Dump Manager | Create, auto-fill, edit, or delete RAM-dumps |
+| `Tether Flowmodoro: Run evening shutdown ritual` | Shutdown Ritual | Run evening shutdown and park tomorrow's first step |
+| `Tether Flowmodoro: Open Tether Desktop` | Open Tether Desktop | Launch or focus Tether Desktop |
 
 ---
 

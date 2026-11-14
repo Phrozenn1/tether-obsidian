@@ -116,3 +116,7 @@
   color: var(--text-muted);
   font-size: 0.9em;
 }
+
+.tether-hidden {
+  display: none;
+}

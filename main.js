@@ -406,7 +406,7 @@ class TetherRamDumpModal extends Modal {
     const btnRow = contentEl.createDiv({ cls: "tether-btn-row" });
 
     this.cancelBtn = btnRow.createEl("button", { text: "Avbryt redigering" });
-    this.cancelBtn.style.display = this.editingIndex === null ? "none" : "inline-flex";
+    this.cancelBtn.toggleClass("tether-hidden", this.editingIndex === null);
     this.cancelBtn.addEventListener("click", () => {
       this.editingIndex = null;
       this.nowInput.value = "";
@@ -436,7 +436,7 @@ class TetherRamDumpModal extends Modal {
   }
 
   updateFormButtons() {
-    this.cancelBtn.style.display = this.editingIndex === null ? "none" : "inline-flex";
+    this.cancelBtn.toggleClass("tether-hidden", this.editingIndex === null);
     this.saveBtn.textContent = this.editingIndex === null ? "Lagre arbeidsminne" : "Oppdater RAM-dump";
   }
 
@@ -597,7 +597,7 @@ class TetherShutdownModal extends Modal {
   }
 }
 
-class TetherObsidianPlugin extends Plugin {
+class TetherFlowPlugin extends Plugin {
   async onload() {
     this.lastAnchorWriteAt = 0;
 
@@ -608,55 +608,55 @@ class TetherObsidianPlugin extends Plugin {
       new TetherHubModal(this.app, this).open();
     });
 
-    this.addRibbonIcon("anchor", "Tether Flow & Arbeidsminne", () => {
+    this.addRibbonIcon("anchor", "Open Tether hub", () => {
       new TetherHubModal(this.app, this).open();
     });
 
     this.addCommand({
       id: "open-hub",
-      name: "Åpne Tether Hub",
+      name: "Open Tether hub",
       callback: () => new TetherHubModal(this.app, this).open(),
     });
 
     this.addCommand({
       id: "toggle-flow",
-      name: "Start / Pause Flowmodoro",
+      name: "Start or pause Flowmodoro",
       callback: () => this.toggleFlow(),
     });
 
     this.addCommand({
       id: "micro-start",
-      name: "Start 5-min Mikrostart",
+      name: "Start 5-minute micro-start",
       callback: () => this.startMicroStart(),
     });
 
     this.addCommand({
       id: "reset-flow",
-      name: "Nullstill Flowmodoro",
+      name: "Reset Flowmodoro",
       callback: () => this.resetFlow(),
     });
 
     this.addCommand({
       id: "capture-impulse",
-      name: "Parker impuls / avsporing",
+      name: "Capture impulse",
       callback: () => new TetherImpulseModal(this.app, this).open(),
     });
 
     this.addCommand({
       id: "ramdump-manager",
-      name: "Arbeidsminne / RAM-dumps (Opprett / Rediger / Slett)",
+      name: "Manage working memory",
       callback: () => new TetherRamDumpModal(this.app, this).open(),
     });
 
     this.addCommand({
       id: "shutdown-ritual",
-      name: "Avslutt dagen (Shutdown Ritual)",
+      name: "Run evening shutdown ritual",
       callback: () => new TetherShutdownModal(this.app, this).open(),
     });
 
     this.addCommand({
       id: "open-desktop",
-      name: "Åpne Tether Desktop",
+      name: "Open Tether Desktop",
       callback: () => this.openDesktopApp(),
     });
 
@@ -902,4 +902,4 @@ class TetherObsidianPlugin extends Plugin {
   }
 }
 
-module.exports = TetherObsidianPlugin;
+module.exports = TetherFlowPlugin;
