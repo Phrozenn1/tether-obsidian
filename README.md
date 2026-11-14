@@ -30,7 +30,7 @@ Traditional productivity timers frequently fail modern knowledge workers, studen
   - Synchronizes in real time with [Tether Desktop](https://github.com/Phrozenn1/tether-desktop) via `~/.local/state/tether/flow_state.json`.
 - **⚓ Automatic Context Anchoring:**
   - Records active vault, note path, nearest Markdown heading, and cursor position to `~/.local/state/tether/context_anchor.json`.
-  - Allows **Tether Desktop** ("Where was I?" & "Auto-fill") to recognize what you are writing or studying in Obsidian and reopen the exact note via `obsidian://`.
+  - Allows **Tether Desktop** (*"Where was I?"* & *"Auto-fill"*) to recognize what you are writing or studying in Obsidian and reopen the exact note via `obsidian://`.
 - **🌱 5-Minute Micro-Start:**
   - Start a low-friction 5-minute commitment right from the Tether Hub or Command Palette.
 - **🧠 RAM-Dump Working Memory Manager (Create / Edit / Delete):**
@@ -47,7 +47,7 @@ Traditional productivity timers frequently fail modern knowledge workers, studen
 ## 📦 Installation
 
 ### Option 1: 1-Click from Tether Desktop (Recommended)
-Open **Tether Desktop → Settings → Arbeidsprogrammer og Kontekst-ankring**, select **Obsidian**, and click **Installer utvidelse**. Then enable **Tether — Flowmodoro & Deep Work Companion** under Obsidian *Settings → Community plugins*.
+Open **Tether Desktop → Settings (`Innstillinger`) → Work Apps & Context Anchoring (`Arbeidsprogrammer og Kontekst-ankring`)**, select **Obsidian**, and click **Install Extension (`Installer utvidelse`)**. Then enable **Tether — Flowmodoro & Deep Work Companion** under Obsidian *Settings → Community plugins*.
 
 ### Option 2: GitHub Release (Manual or BRAT)
 1. Download `tether-obsidian-v1.0.0.zip` (or `manifest.json`, `main.js`, `styles.css`) from [GitHub Releases](https://github.com/Phrozenn1/tether-obsidian/releases/latest).
@@ -60,16 +60,32 @@ Open **Tether Desktop → Settings → Arbeidsprogrammer og Kontekst-ankring**, 
 
 ## ⌨️ Commands
 
-| Command | Description |
-| :--- | :--- |
-| `Tether: Åpne Tether Hub` | Open quick control modal (also via Ribbon anchor icon or status bar) |
-| `Tether: Start / Pause Flowmodoro` | Toggle between Focus and earned proportional Break |
-| `Tether: Start 5-min Mikrostart` | Begin a 5-minute Micro-Start session |
-| `Tether: Nullstill Flowmodoro` | Reset timer to Idle |
-| `Tether: Parker impuls / avsporing` | Park a distracting thought to `impulses.md` |
-| `Tether: Arbeidsminne / RAM-dumps (Opprett / Rediger / Slett)` | Create, auto-fill, edit, or delete RAM-dumps |
-| `Tether: Avslutt dagen (Shutdown Ritual)` | Run end-of-day shutdown and park tomorrow's first step |
-| `Tether: Åpne Tether Desktop` | Launch or focus Tether Desktop |
+| Command | Meaning | Description |
+| :--- | :--- | :--- |
+| `Tether: Åpne Tether Hub` | Open Tether Hub | Open quick control modal (also via Ribbon anchor icon or status bar) |
+| `Tether: Start / Pause Flowmodoro` | Toggle Flowmodoro | Toggle between Focus and earned proportional Break |
+| `Tether: Start 5-min Mikrostart` | 5m Micro-Start | Begin a 5-minute low-barrier Micro-Start session |
+| `Tether: Nullstill Flowmodoro` | Reset Flowmodoro | Reset timer to Idle |
+| `Tether: Parker impuls / avsporing` | Park Impulse | Capture a distracting thought to `impulses.md` |
+| `Tether: Arbeidsminne / RAM-dumps (Opprett / Rediger / Slett)` | RAM-Dump Manager | Create, auto-fill, edit, or delete RAM-dumps |
+| `Tether: Avslutt dagen (Shutdown Ritual)` | Shutdown Ritual | Run evening shutdown and park tomorrow's first step |
+| `Tether: Åpne Tether Desktop` | Open Tether Desktop | Launch or focus Tether Desktop |
+
+---
+
+## 🔬 Scientific Foundation
+
+Tether's Flowmodoro timing, Micro-Start initiation scaffolding, RAM-dump working memory capture, and interruption buffering are grounded in peer-reviewed research on ADHD, Autism, Dyslexia, and Universal Cognitive Ergonomics:
+- 👉 [**`RESEARCH.md` — Scientific Rationale & Neurodivergent Research Foundation**](https://github.com/Phrozenn1/tether-desktop/blob/main/RESEARCH.md)
+
+---
+
+## 🇳🇴 Norsk sammendrag
+
+Tether for Obsidian gir deg ADHD-vennlig arbeidsflyt rett i notatene dine:
+- **Flowmodoro i statuslinjen**: Tell oppover så lenge du har flyt og opptjen pause automatisk, fullt synkronisert med Tether Desktop.
+- **Kontekst-ankring & RAM-dumps**: Lagre, rediger og slett `[NÅ]` / `[STATUS]` / `[NESTE STEG]` direkte fra aktivt notat og overskrift.
+- **Mikrostart, Impuls-buffer & Kvelds-avslutning**: Bryt dørstokkmila på 5 minutter, parkér avsporinger til `impulses.md` og avslutt dagen trygt.
 
 ---
 
