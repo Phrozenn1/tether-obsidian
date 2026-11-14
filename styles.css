@@ -1,0 +1,118 @@
+.tether-status-bar {
+  cursor: pointer;
+  padding: 0 8px;
+  border-radius: 4px;
+  font-variant-numeric: tabular-nums;
+  font-weight: 500;
+}
+
+.tether-status-bar:hover {
+  background-color: var(--background-modifier-hover);
+}
+
+.tether-status-focus {
+  color: var(--interactive-accent);
+}
+
+.tether-status-break {
+  color: var(--text-success, #4caf50);
+}
+
+.tether-status-micro {
+  color: var(--text-warning, #ff9800);
+}
+
+.tether-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.tether-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background-color: var(--background-secondary);
+  font-size: 0.85em;
+  font-weight: 600;
+}
+
+.tether-action-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.tether-modal-field {
+  margin-bottom: 10px;
+}
+
+.tether-modal-field label {
+  display: block;
+  font-size: 0.85em;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: var(--text-muted);
+}
+
+.tether-modal-field input,
+.tether-modal-field textarea {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.tether-btn-row {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 10px;
+  margin-bottom: 14px;
+}
+
+.tether-ramdump-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 280px;
+  overflow-y: auto;
+  margin-top: 8px;
+}
+
+.tether-ramdump-item {
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 8px;
+  padding: 10px 12px;
+  background-color: var(--background-secondary);
+}
+
+.tether-ramdump-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.tether-ramdump-time {
+  font-size: 0.8em;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.tether-ramdump-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.tether-ramdump-line {
+  font-size: 0.9em;
+  margin: 2px 0;
+  word-break: break-word;
+}
+
+.tether-muted {
+  color: var(--text-muted);
+  font-size: 0.9em;
+}

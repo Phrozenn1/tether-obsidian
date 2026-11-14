@@ -1,0 +1,10 @@
+{
+  "id": "tether-obsidian",
+  "name": "Tether — Flowmodoro & Deep Work Companion",
+  "version": "1.0.0",
+  "minAppVersion": "1.0.0",
+  "description": "Flowmodoro timer, automatic context save-states, and cognitive anchoring for deep work, neurodivergent minds, and focus.",
+  "author": "Phrozenn1",
+  "authorUrl": "https://github.com/Phrozenn1",
+  "isDesktopOnly": true
+}
