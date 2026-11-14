@@ -1,7 +1,7 @@
 {
   "id": "tether-flow",
   "name": "Tether Flowmodoro",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "minAppVersion": "1.0.0",
   "description": "Track Flowmodoro focus sessions, anchor active note context, and capture working memory save-states for deep work.",
   "author": "Phrozenn1",

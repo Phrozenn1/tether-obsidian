@@ -4,7 +4,6 @@ const { Plugin, Modal, Notice, MarkdownView } = require("obsidian");
 const fs = require("fs");
 const path = require("path");
 const os = require("os");
-const { spawn } = require("child_process");
 
 const WRITER_NAME = "obsidian";
 
@@ -302,13 +301,6 @@ class TetherHubModal extends Modal {
     const resetBtn = grid.createEl("button", { text: "⏹️ Nullstill timer" });
     resetBtn.addEventListener("click", () => {
       this.plugin.resetFlow();
-      this.close();
-    });
-
-    const footerRow = contentEl.createDiv({ cls: "tether-btn-row" });
-    const openDesktopBtn = footerRow.createEl("button", { text: "Åpne Tether Desktop" });
-    openDesktopBtn.addEventListener("click", () => {
-      this.plugin.openDesktopApp();
       this.close();
     });
   }
@@ -654,12 +646,6 @@ class TetherFlowPlugin extends Plugin {
       callback: () => new TetherShutdownModal(this.app, this).open(),
     });
 
-    this.addCommand({
-      id: "open-desktop",
-      name: "Open Tether Desktop",
-      callback: () => this.openDesktopApp(),
-    });
-
     this.registerEvent(
       this.app.workspace.on("active-leaf-change", () => {
         this.syncContextAnchor(true);
@@ -888,17 +874,6 @@ class TetherFlowPlugin extends Plugin {
       status: statusSnippet,
       next: `Fortsett ved linje ${info.line} i ${info.relativePath}`,
     };
-  }
-
-  openDesktopApp() {
-    const bin = path.join(os.homedir(), ".local", "bin", "tether");
-    const cmd = fs.existsSync(bin) ? bin : "tether";
-    try {
-      const child = spawn(cmd, [], { detached: true, stdio: "ignore" });
-      child.unref();
-    } catch (err) {
-      new Notice(`Kunne ikke starte Tether Desktop: ${err.message}`);
-    }
   }
 }
 

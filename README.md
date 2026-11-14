@@ -1,4 +1,4 @@
-# Tether for Obsidian ⚓
+# Tether Flowmodoro
 
 [![GitHub release](https://img.shields.io/github/v/release/Phrozenn1/tether-obsidian?style=flat-square&color=22d3ee)](https://github.com/Phrozenn1/tether-obsidian/releases)
 [![Obsidian >= 1.0.0](https://img.shields.io/badge/Obsidian-%3E%3D1.0.0-7c3aed?style=flat-square)](https://obsidian.md)
@@ -50,11 +50,11 @@ Traditional productivity timers frequently fail modern knowledge workers, studen
 Open **Tether Desktop → Settings (`Innstillinger`) → Work Apps & Context Anchoring (`Arbeidsprogrammer og Kontekst-ankring`)**, select **Obsidian**, and click **Install Extension (`Installer utvidelse`)**. Then enable **Tether Flowmodoro** under Obsidian *Settings → Community plugins*.
 
 ### Option 2: GitHub Release (Manual or BRAT)
-1. Download `tether-flow-1.0.0.zip` (or `manifest.json`, `main.js`, `styles.css`) from [GitHub Releases](https://github.com/Phrozenn1/tether-obsidian/releases/latest).
-2. Extract into `<your-vault>/.obsidian/plugins/tether-flow/`.
+1. Download `manifest.json`, `main.js`, and `styles.css` from [GitHub Releases](https://github.com/Phrozenn1/tether-obsidian/releases/latest).
+2. Place them into `<your-vault>/.obsidian/plugins/tether-flow/`.
 3. Restart Obsidian or reload Community Plugins and toggle **Tether Flowmodoro** on.
 
-*Note: Releases use bare semantic version tags without a `v` prefix (`1.0.0`, etc.) to match Obsidian Community Plugin & BRAT guidelines.*
+*Note: Releases use bare semantic version tags without a `v` prefix (`1.0.1`, etc.) to match Obsidian Community Plugin & BRAT guidelines.*
 
 ---
 
@@ -69,7 +69,15 @@ Open **Tether Desktop → Settings (`Innstillinger`) → Work Apps & Context Anc
 | `Tether Flowmodoro: Capture impulse` | Park Impulse | Capture a distracting thought to `impulses.md` |
 | `Tether Flowmodoro: Manage working memory` | RAM-Dump Manager | Create, auto-fill, edit, or delete RAM-dumps |
 | `Tether Flowmodoro: Run evening shutdown ritual` | Shutdown Ritual | Run evening shutdown and park tomorrow's first step |
-| `Tether Flowmodoro: Open Tether Desktop` | Open Tether Desktop | Launch or focus Tether Desktop |
+
+---
+
+## 🔒 Privacy & Local Filesystem Access
+
+This desktop-only plugin makes **zero network requests**, includes no analytics/telemetry, and executes no external shell processes. To enable real-time local state sharing with companion tools ([Tether Desktop](https://github.com/Phrozenn1/tether-desktop), Neovim, and VS Code), Node.js `fs` is used exclusively within the user's local Tether state directory (`~/.local/state/tether/` / `$XDG_STATE_HOME/tether/`) and user-configured impulses file (`~/.config/tether/settings.json`):
+
+- `flow_state.json`, `context_anchor.json`, `editor_focus.json`, `last_shutdown.json`
+- `ramdumps.md` and `impulses.md`
 
 ---
 
