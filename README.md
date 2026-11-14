@@ -50,11 +50,11 @@ Traditional productivity timers frequently fail modern knowledge workers, studen
 Open **Tether Desktop → Settings (`Innstillinger`) → Work Apps & Context Anchoring (`Arbeidsprogrammer og Kontekst-ankring`)**, select **Obsidian**, and click **Install Extension (`Installer utvidelse`)**. Then enable **Tether Flowmodoro** under Obsidian *Settings → Community plugins*.
 
 ### Option 2: GitHub Release (Manual or BRAT)
-1. Download `tether-obsidian-v1.0.0.zip` (or `manifest.json`, `main.js`, `styles.css`) from [GitHub Releases](https://github.com/Phrozenn1/tether-obsidian/releases/latest).
-2. Extract into `<your-vault>/.obsidian/plugins/tether/`.
+1. Download `tether-flow-1.0.0.zip` (or `manifest.json`, `main.js`, `styles.css`) from [GitHub Releases](https://github.com/Phrozenn1/tether-obsidian/releases/latest).
+2. Extract into `<your-vault>/.obsidian/plugins/tether-flow/`.
 3. Restart Obsidian or reload Community Plugins and toggle **Tether Flowmodoro** on.
 
-*For [BRAT](https://github.com/TfTHacker/obsidian42-brat), note that this repository follows the `v*` release tag scheme shared across Tether (`v1.0.0`, etc.).*
+*Note: Releases use bare semantic version tags without a `v` prefix (`1.0.0`, etc.) to match Obsidian Community Plugin & BRAT guidelines.*
 
 ---
 

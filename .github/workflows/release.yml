@@ -8,9 +8,9 @@ on:
   workflow_dispatch:
     inputs:
       release_tag:
-        description: 'Target GitHub Release tag to attach assets to (e.g. v1.0.0)'
+        description: 'Target GitHub Release tag to attach assets to (e.g. 1.0.0)'
         required: false
-        default: 'v1.0.0'
+        default: '1.0.0'
 
 permissions:
   contents: write
@@ -35,10 +35,10 @@ jobs:
         id: pkg
         run: |
           TAG="${{ startsWith(github.ref, 'refs/tags/') && github.ref_name || inputs.release_tag }}"
-          ARCHIVE="tether-obsidian-${TAG}.zip"
-          mkdir -p dist/tether
-          cp manifest.json main.js styles.css versions.json LICENSE README.md dist/tether/
-          (cd dist && zip -r "../${ARCHIVE}" tether)
+          ARCHIVE="tether-flow-${TAG}.zip"
+          mkdir -p dist/tether-flow
+          cp manifest.json main.js styles.css versions.json LICENSE README.md dist/tether-flow/
+          (cd dist && zip -r "../${ARCHIVE}" tether-flow)
           echo "archive=${ARCHIVE}" >> "$GITHUB_OUTPUT"
           echo "tag=${TAG}" >> "$GITHUB_OUTPUT"
 
