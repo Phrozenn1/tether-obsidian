@@ -47,12 +47,12 @@ Traditional productivity timers frequently fail modern knowledge workers, studen
 ## 📦 Installation
 
 ### Option 1: 1-Click from Tether Desktop (Recommended)
-Open **Tether Desktop → Settings (`Innstillinger`) → Work Apps & Context Anchoring (`Arbeidsprogrammer og Kontekst-ankring`)**, select **Obsidian**, and click **Install Extension (`Installer utvidelse`)**. Then enable **Tether — Flowmodoro & Deep Work Companion** under Obsidian *Settings → Community plugins*.
+Open **Tether Desktop → Settings (`Innstillinger`) → Work Apps & Context Anchoring (`Arbeidsprogrammer og Kontekst-ankring`)**, select **Obsidian**, and click **Install Extension (`Installer utvidelse`)**. Then enable **Tether Flowmodoro** under Obsidian *Settings → Community plugins*.
 
 ### Option 2: GitHub Release (Manual or BRAT)
 1. Download `tether-obsidian-v1.0.0.zip` (or `manifest.json`, `main.js`, `styles.css`) from [GitHub Releases](https://github.com/Phrozenn1/tether-obsidian/releases/latest).
-2. Extract into `<your-vault>/.obsidian/plugins/tether-obsidian/`.
-3. Restart Obsidian or reload Community Plugins and toggle **Tether — Flowmodoro & Deep Work Companion** on.
+2. Extract into `<your-vault>/.obsidian/plugins/tether/`.
+3. Restart Obsidian or reload Community Plugins and toggle **Tether Flowmodoro** on.
 
 *For [BRAT](https://github.com/TfTHacker/obsidian42-brat), note that this repository follows the `v*` release tag scheme shared across Tether (`v1.0.0`, etc.).*
 

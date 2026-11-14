@@ -613,49 +613,49 @@ class TetherObsidianPlugin extends Plugin {
     });
 
     this.addCommand({
-      id: "tether-open-hub",
+      id: "open-hub",
       name: "Åpne Tether Hub",
       callback: () => new TetherHubModal(this.app, this).open(),
     });
 
     this.addCommand({
-      id: "tether-toggle-flow",
+      id: "toggle-flow",
       name: "Start / Pause Flowmodoro",
       callback: () => this.toggleFlow(),
     });
 
     this.addCommand({
-      id: "tether-micro-start",
+      id: "micro-start",
       name: "Start 5-min Mikrostart",
       callback: () => this.startMicroStart(),
     });
 
     this.addCommand({
-      id: "tether-reset-flow",
+      id: "reset-flow",
       name: "Nullstill Flowmodoro",
       callback: () => this.resetFlow(),
     });
 
     this.addCommand({
-      id: "tether-capture-impulse",
+      id: "capture-impulse",
       name: "Parker impuls / avsporing",
       callback: () => new TetherImpulseModal(this.app, this).open(),
     });
 
     this.addCommand({
-      id: "tether-ramdump-manager",
+      id: "ramdump-manager",
       name: "Arbeidsminne / RAM-dumps (Opprett / Rediger / Slett)",
       callback: () => new TetherRamDumpModal(this.app, this).open(),
     });
 
     this.addCommand({
-      id: "tether-shutdown-ritual",
+      id: "shutdown-ritual",
       name: "Avslutt dagen (Shutdown Ritual)",
       callback: () => new TetherShutdownModal(this.app, this).open(),
     });
 
     this.addCommand({
-      id: "tether-open-desktop",
+      id: "open-desktop",
       name: "Åpne Tether Desktop",
       callback: () => this.openDesktopApp(),
     });
